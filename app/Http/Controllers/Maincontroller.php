@@ -27,8 +27,7 @@ class Maincontroller extends Controller
 
     public function check($id,Request $request)
     {
-        dd($id);
-dd($request);
+
      $valid = $request->validate([
              'name' => 'required|min:4,max:50',
              'email' => 'required|min:4,max:20',
